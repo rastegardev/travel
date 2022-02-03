@@ -1,0 +1,151 @@
+/*  - - - Basic Page - - - */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #3b313a;
+  font-family: "Fredoka One", fantasy;
+}
+
+/* - - - Hedaer  - - - */
+header {
+  display: flex;
+  position: relative;
+}
+.header-logo {
+  margin: 20px 150px;
+}
+.header-list {
+  margin: 27px 0;
+  color: #fff;
+  display: flex;
+  list-style-type: none;
+  position: absolute;
+  right: 350px;
+}
+.header-list li {
+  margin: 20px;
+  cursor: pointer;
+}
+.header-list li:hover {
+  color: #9c606c;
+}
+.header-list a {
+  color: #fff;
+  text-decoration: none;
+}
+.header-icon-search {
+  margin: 45px 0;
+  color: #fff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  position: absolute;
+  right: 320px;
+  transition: 0.25s;
+}
+.header-icon-search:active {
+  color: #9c606c;
+  font-size: 1.75rem;
+}
+.header-icon-bars {
+  display: none;
+}
+.header-btn {
+  width: 150px;
+  height: 40px;
+  margin: 40px 0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background: #9c606c;
+  font-family: "Fredoka One", fantasy;
+  border-radius: 10px;
+  position: absolute;
+  right: 150px;
+}
+.header-btn:hover {
+  background: #86555f;
+  box-shadow: #959da533 0px 8px 24px;
+}
+/* .header-line {
+  width: 81%;
+  text-align: center;
+  border-top: 2px solid #8b5560;
+  border-radius: 50px;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+} */
+
+/* - - - Main - - - */
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.main-text {
+  z-index: 10;
+  display: flex;
+  flex-flow: column;
+}
+.main-photo {
+  width: 550px;
+  position: absolute;
+  right: 150px;
+  top: 150px;
+}
+.main-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 300;
+  position: absolute;
+  left: 150px;
+  top: 200px;
+}
+.main-dec {
+  width: 600px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  position: absolute;
+  left: 150px;
+  top: 300px;
+}
+.main-dec span {
+  color: #eb8c9f;
+}
+.main-button-1 {
+  width: 150px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background: #9c606c;
+  font-family: "Fredoka One", fantasy;
+  border-radius: 10px;
+  position: absolute;
+  top: 500px;
+  left: 150px;
+}
+.main-button-1:hover {
+  background: #86555f;
+  box-shadow: #959da533 0px 8px 24px;
+}
+.main-button-2 {
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background: transparent;
+  font-family: "Fredoka One", fantasy;
+  border-radius: 10px;
+  position: absolute;
+  top: 500px;
+  left: 330px;
+}
+.main-button-2:hover {
+  background: rgba(255, 255, 255, 0.171);
+  box-shadow: #959da533 0px 8px 24px;
+}
