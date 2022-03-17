@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser title -->
+    <title>Travel</title>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/f28d00d089.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+    </style>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- - - - - - - - - Start Header component - - - - - - - - -->
+    <header class="navbar container block">
+        <div class="navbar-img">
+            <img class="navbar__logo" src="./logo.jpg" alt="tripium logo">
+        </div>
+        <div class="navbar-list-button">
+            <div class="navbar__toggler nav__toggler ">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+            </div>
+            <ul class="navbar__list">
+                <li>About Tripium</li>
+                <li>Help</li>
+                <li>Job</li>
+            </ul>
+            <span class="navbar__search"><i class="fas fa-search"></i></span>
+            <button class="navbar__button">Free Registration</button>
+        </div>
+    </header>
+    <!-- - - - - - - - - End Header Logo component - - - - - - - - -->
+
+    <!-- - - - - - - - - Start Main component - - - - - - - - -->
+    <main class="main container block">
+        <div class="main-text">
+            <h2 class="main-text__title">Write a Good Travel Essay</h2>
+            <p class="main-text__desc">
+                Welcome home! Now that you're back from your trip, you'd like to share it with others in a travel essay.
+                You're a
+                good writer and a good editor of your work, but you've never tried travel writing before. You can
+                also enjoy
+                reading other people's travelogues. All Tripium services are free for you
+            </p>
+            <div class="main-text__buttons">
+                <button class="main-text__button button-1">Free Registration</button>
+                <button class="main-text__button button-2">How it works</button>
+            </div>
+        </div>
+        <div class="main-image">
+            <img src="./bike.jpg" alt="">
+        </div>
+    </main>
+    <!-- - - - - - - - - End Main component - - - - - - - - -->
+
+    <script>
+        // Start navbar toggler
+        const toggler = document.querySelector(".nav__toggler");
+        const navbar = document.querySelector(".navbar");
+        toggler.addEventListener("click", (e) => {
+            navbar.classList.toggle("nav__expanded");
+        });
+        // End navbar toggler
+    </script>
+
+</body>
+
+</html>
